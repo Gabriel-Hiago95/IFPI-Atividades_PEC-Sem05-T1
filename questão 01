@@ -1,0 +1,8 @@
+def main():
+    def cont_carac(nome):
+        cont = len(nome)
+        return f'O nome que você escolheu tem {cont} caracteres'
+    nom = input('Informe um nome qualquer: ').strip()
+    print(cont_carac(nom))
+if __name__ == '__main__':
+    main()
