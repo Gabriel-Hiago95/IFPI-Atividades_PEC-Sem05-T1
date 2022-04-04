@@ -1,0 +1,10 @@
+def main():
+    def duracao(ts):
+        h = ts // 3600
+        m = (ts % 3600) // 60
+        s = (ts % 3600) % 60
+        return f'O tempo de {ts} segundos equivalem a {h} horas, {m} minutos e {s} segundos'
+    tempo = int(input('Informe o tempo de duração do evento em segundos: ').strip())
+    print(duracao(tempo))
+if __name__ == '__main__':
+    main()
