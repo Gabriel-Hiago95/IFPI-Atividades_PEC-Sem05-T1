@@ -1,0 +1,10 @@
+def main():
+    def pagamento(compra):
+        a_vista = compra - (compra * (9 / 100))
+        cinco_vzs = compra / 5
+        dez_vzs = (compra + (compra * 17 / 100)) / 10
+        return f'Valor do pagamento a vista R$ {a_vista:.2f}\nValor da prestação em 5x R$: {cinco_vzs:.2f}\nValor da prestação em 10x R$: {dez_vzs:.2f}'
+    valor = float(input('Informe o valor total da compra em R$: ').strip())
+    print(pagamento(valor))
+if __name__ == '__main__':
+    main()
